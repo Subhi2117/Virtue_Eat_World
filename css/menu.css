@@ -1,0 +1,137 @@
+/* =========================================================
+   VIRTUE EAT WORLD — menu.css
+   Styles specific to menu.html
+   ========================================================= */
+.menu-toolbar{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:36px;
+  background:var(--paper);
+  border:1px solid var(--line);
+  padding:16px;
+  border-radius:var(--radius-md);
+  box-sizing:border-box;
+  /* Stays in normal document flow at the top of the menu section only.
+     Deliberately NOT sticky/fixed — it scrolls away with the page like
+     any other block instead of pinning itself as the user scrolls down. */
+  position:static;
+}
+
+.search-box{
+  flex:1;
+  min-width:200px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:var(--cream);
+  border-radius:99px;
+  padding:10px 18px;
+  border:1px solid var(--line);
+}
+.search-box input{
+  border:none; background:transparent; outline:none;
+  font-family:var(--font-body); font-size:.95rem; width:100%; color:var(--ink);
+}
+
+.menu-toolbar .filter-chips{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.menu-toolbar .chip{
+  white-space:nowrap;
+  flex:0 0 auto;
+}
+
+.menu-category{ margin-bottom:56px; }
+.menu-category-title{
+  display:flex; align-items:baseline; gap:14px;
+  margin-bottom:24px;
+}
+.menu-category-title h2{ font-size:1.6rem; margin:0; }
+.menu-category-title::after{
+  content:""; flex:1; height:2px;
+  background:repeating-linear-gradient(90deg, var(--line) 0 8px, transparent 8px 14px);
+}
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(240px,1fr));
+  gap:24px;
+}
+.menu-item{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:var(--radius-md);
+  overflow:hidden;
+  transition:transform .3s ease, box-shadow .3s ease;
+  display:flex;
+  flex-direction:column;
+}
+.menu-item:hover{ transform:translateY(-6px); box-shadow:var(--shadow-card); }
+.menu-item-photo{ aspect-ratio:4/3; overflow:hidden; }
+.menu-item-photo img{ width:100%; height:100%; object-fit:cover; transition:transform .4s ease; }
+.menu-item:hover .menu-item-photo img{ transform:scale(1.08); }
+.menu-item-body{ padding:18px 20px 20px; flex:1; display:flex; flex-direction:column; }
+.menu-item-body h4{ font-size:1.05rem; margin-bottom:4px; display:flex; justify-content:space-between; gap:10px; }
+.menu-item-body h4 .price{ font-family:var(--font-display); color:var(--chili); white-space:nowrap; }
+.menu-item-body p{ font-size:.88rem; flex:1; }
+.menu-item .btn{ margin-top:auto; align-self:flex-start; }
+.menu-item.hidden{ display:none; }
+.no-results{ text-align:center; padding:60px 0; color:var(--ink-soft); display:none; }
+.no-results.show{ display:block; }
+
+/* ---------- Responsive ---------- */
+@media (max-width:768px){
+  .menu-grid{
+    grid-template-columns:repeat(auto-fill, minmax(200px,1fr));
+    gap:16px;
+  }
+}
+
+@media (max-width:640px){
+  .menu-toolbar{
+    flex-direction:column;
+    align-items:stretch;
+    gap:12px;
+    padding:12px;
+  }
+
+  .search-box{
+    min-width:0;
+    padding:10px 16px;
+  }
+
+  /* iOS zooms in on inputs with font-size below 16px */
+  .search-box input{ font-size:16px; }
+
+  /* Category chips scroll horizontally as one row instead of
+     wrapping into several lines, which eats vertical space and
+     pushes the search box off screen on small phones. */
+   .menu-toolbar .filter-chips{
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: auto;
+    scrollbar-width: none;
+}
+    /* padding-bottom:2px;
+    margin:0 -12px;
+    padding-left:12px;
+    padding-right:12px;
+  } */
+  .menu-toolbar .filter-chips::-webkit-scrollbar{ display:none; }
+
+  .menu-category-title h2{ font-size:1.3rem; }
+  .menu-category{ margin-bottom:40px; }
+}
+
+@media (max-width:480px){
+  .menu-grid{
+    grid-template-columns:1fr;
+  }
+  .menu-item-body{ padding:14px 16px 16px; }
+  .menu-item-body h4{ font-size:1rem; }
+}

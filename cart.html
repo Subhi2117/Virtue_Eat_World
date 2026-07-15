@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | Virtue Eat World</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/mobile polish.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><img src="images/Icon.png" alt="Virtue Eat World "></span>
+      <span>Virtue Eat World</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="franchise.html">Franchise</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+     <div class="nav-cta">
+      <a href="cart.html" class="cart-btn" aria-label="Shopping Cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cartCount"></span>
+      </a>
+
+      <a href="menu.html" class="btn btn-primary btn-sm">
+        <span class="long">Order Now</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+      </button>
+
+    </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+    </div>
+  </nav>
+</header>
+
+
+    <!-- Cart Section -->
+
+    <section class="cart-section">
+
+        <div class="container">
+
+            <h1 class="cart-title">Shopping Cart</h1>
+
+            <div class="cart-layout">
+
+                <!-- Left -->
+
+                <div class="cart-items">
+
+                    <div class="cart-head">
+
+                        <span>Product</span>
+
+                        <span>Price</span>
+
+                        <span>Quantity</span>
+
+                        <span>Total</span>
+
+                    </div>
+
+                    <div id="cartItems">
+
+                        <!-- JS Loads Here -->
+
+                    </div>
+
+                </div>
+
+
+                <!-- Right -->
+
+                <div class="cart-summary">
+
+                    <h2>Order Summary</h2>
+
+                    <div class="summary-row">
+
+                        <span>Subtotal</span>
+
+                        <span id="subtotal">₹0</span>
+
+                    </div>
+
+                    <div class="summary-row">
+
+                        <span>Delivery</span>
+
+                        <span>Free</span>
+
+                    </div>
+
+                    <div class="summary-row">
+
+                        <span>GST</span>
+
+                        <span>Included</span>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="summary-row total">
+
+                        <span>Total</span>
+
+                        <span id="grandTotal">₹0</span>
+
+                    </div>
+
+                    <button class="btn btn-primary checkout-btn">
+                        Proceed to Checkout
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

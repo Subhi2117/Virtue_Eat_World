@@ -1,0 +1,360 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Virtue Eat World</title>
+  <meta name="description" content="Browse the full Virtue Eat World menu — pani puri, chocolate puri, mayonnaise puri, thattu vadai, cakes, bubble tea and snacks.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/mobile polish.css">
+  <link rel="stylesheet" href="css/menu.css">
+  </head>
+  <body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="brand">
+        <span class="brand-mark"><img src="images/Icon.png" alt="Virtue Eat World "></span>
+        <span>Virtue Eat World<small>Chaat &amp; Bubble Tea Co.</small></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="franchise.html">Franchise</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="cart.html" class="cart-btn" aria-label="Shopping Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cartCount"></span>
+        </a>
+
+        <a href="menu.html" class="btn btn-primary btn-sm">
+          <span class="long">Order Now</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb">Home <span>/</span> Menu</div>
+      <h1>Our full menu</h1>
+      <p>Seven categories, forty-plus items, all made fresh to order. Use the search or filters below to find your favourite.</p>
+    </div>
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,32 C240,90 480,0 720,24 C960,48 1200,90 1440,40 L1440,100 L0,100 Z" fill="#FFF6E7"></path></svg>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="menu-toolbar">
+        <div class="search-box">
+          <span>🔍</span>
+          <input type="text" id="menuSearch" placeholder="Search for a dish, e.g. 'boba' or 'vadai'...">
+        </div>
+        <div class="filter-chips">
+          <button class="chip active" data-category="all">All</button>
+          <button class="chip" data-category="panipuri">Pani Puri</button>
+          <button class="chip" data-category="chocolatepuri">Chocolate Puri</button>
+          <button class="chip" data-category="mayopuri">Mayonnaise Puri</button>
+          <button class="chip" data-category="thattuvadai">Thattu Vadai</button>
+          <button class="chip" data-category="cakes">Cakes &amp; Brownies</button>
+          <button class="chip" data-category="tea">Tea &amp; Bubble Tea</button>
+          <button class="chip" data-category="snacks">Snacks</button>
+        </div>
+      </div>
+
+      
+      <div class="menu-category" data-cat="panipuri">
+        <div class="menu-category-title"><h2>Pani Puri</h2></div>
+        <div class="menu-grid">
+        <div class="menu-item" data-category="panipuri" data-name="Classic Masala Puri">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=400&q=80" alt="Classic Masala Puri"></div>
+          <div class="menu-item-body">
+            <h4>Classic Masala Puri<span class="price">₹49</span></h4>
+            <p>Crisp puris filled with spicy mint pani, tamarind chutney and boiled potato.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        <div class="menu-item" data-category="panipuri" data-name="Sweet &amp; Sour Puri">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=400&q=80" alt="Sweet &amp; Sour Puri"></div>
+          <div class="menu-item-body">
+            <h4>Sweet &amp; Sour Puri<span class="price">₹49</span></h4>
+            <p>A milder pani balanced with jaggery-tamarind sweetness for the spice-shy.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        <div class="menu-item" data-category="panipuri" data-name="Dahi Puri">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1596797038530-2c107aa4e1fb?auto=format&fit=crop&w=400&q=80" alt="Dahi Puri"></div>
+          <div class="menu-item-body">
+            <h4>Dahi Puri<span class="price">₹59</span></h4>
+            <p>Puris loaded with whisked curd, sev, and a drizzle of both chutneys.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        <div class="menu-item" data-category="panipuri" data-name="Corn &amp; Cheese Puri">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=400&q=80" alt="Corn &amp; Cheese Puri"></div>
+          <div class="menu-item-body">
+            <h4>Corn &amp; Cheese Puri<span class="price">₹69</span></h4>
+            <p>A fusion twist with sweet corn, grated cheese, and spiced pani.</p>
+          <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="menu-category" data-cat="chocolatepuri">
+        <div class="menu-category-title"><h2>Chocolate Puri</h2></div>
+        <div class="menu-grid">
+        <div class="menu-item" data-category="chocolatepuri" data-name="Choco Lava Puri">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=400&q=80" alt="Choco Lava Puri"></div>
+          <div class="menu-item-body">
+            <h4>Choco Lava Puri<span class="price">₹69</span></h4>
+            <p>Crisp puri shells filled with warm molten chocolate and a nut crumble.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        <div class="menu-item" data-category="chocolatepuri" data-name="Nutella Hazelnut Puri">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=400&q=80" alt="Nutella Hazelnut Puri"></div>
+          <div class="menu-item-body">
+            <h4>Nutella Hazelnut Puri<span class="price">₹79</span></h4>
+            <p>Nutella, roasted hazelnut bits, and a dusting of cocoa powder.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        <div class="menu-item" data-category="chocolatepuri" data-name="White Choco Puri">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=400&q=80" alt="White Choco Puri"></div>
+          <div class="menu-item-body">
+            <h4>White Choco Puri<span class="price">₹75</span></h4>
+            <p>White chocolate ganache with a hint of cardamom.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      
+      <div class="menu-category" data-cat="mayopuri">
+        <div class="menu-category-title"><h2>Mayonnaise Puri</h2></div>
+        <div class="menu-grid">
+        <div class="menu-item" data-category="mayopuri" data-name="Peri Peri Mayo Puri">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1596797038530-2c107aa4e1fb?auto=format&fit=crop&w=400&q=80" alt="Peri Peri Mayo Puri"></div>
+          <div class="menu-item-body">
+            <h4>Peri Peri Mayo Puri<span class="price">₹59</span></h4>
+            <p>Our bestseller — peppery mayo, sev, pomegranate, and a peri-peri kick.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        <div class="menu-item" data-category="mayopuri" data-name="Garlic Mayo Puri">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80" alt="Garlic Mayo Puri"></div>
+          <div class="menu-item-body">
+            <h4>Garlic Mayo Puri<span class="price">₹59</span></h4>
+            <p>Roasted garlic mayo with crushed peanuts and spring onion.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        <div class="menu-item" data-category="mayopuri" data-name="Cheesy Mayo Puri">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=400&q=80" alt="Cheesy Mayo Puri"></div>
+          <div class="menu-item-body">
+            <h4>Cheesy Mayo Puri<span class="price">₹69</span></h4>
+            <p>Mayo, mozzarella shavings, and a chilli-oil finish.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="menu-category" data-cat="thattuvadai">
+        <div class="menu-category-title"><h2>Thattu Vadai</h2></div>
+        <div class="menu-grid">
+        <div class="menu-item" data-category="thattuvadai" data-name="Chettinad Thattu Vadai">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=400&q=80" alt="Chettinad Thattu Vadai"></div>
+          <div class="menu-item-body">
+            <h4>Chettinad Thattu Vadai<span class="price">₹59</span></h4>
+            <p>Flattened lentil vadai, deep-fried crisp, served with coconut chutney.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        <div class="menu-item" data-category="thattuvadai" data-name="Masala Thattu Vadai">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?auto=format&fit=crop&w=400&q=80" alt="Masala Thattu Vadai"></div>
+          <div class="menu-item-body">
+            <h4>Masala Thattu Vadai<span class="price">₹65</span></h4>
+            <p>Spiced with curry leaf and green chilli for extra heat.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        <div class="menu-item" data-category="thattuvadai" data-name="Onion Thattu Vadai">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1567337710282-00832b415979?auto=format&fit=crop&w=400&q=80" alt="Onion Thattu Vadai"></div>
+          <div class="menu-item-body">
+            <h4>Onion Thattu Vadai<span class="price">₹65</span></h4>
+            <p>Loaded with caramelised onion bits for a sweet-savoury bite.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="menu-category" data-cat="cakes">
+        <div class="menu-category-title"><h2>Cakes &amp; Brownies</h2></div>
+        <div class="menu-grid">
+        <div class="menu-item" data-category="cakes" data-name="Molten Choco Brownie">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=400&q=80" alt="Molten Choco Brownie"></div>
+          <div class="menu-item-body">
+            <h4>Molten Choco Brownie<span class="price">₹99</span></h4>
+            <p>Fudgy brownie served warm with a gooey chocolate centre.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        <div class="menu-item" data-category="cakes" data-name="Red Velvet Slice">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=400&q=80" alt="Red Velvet Slice"></div>
+          <div class="menu-item-body">
+            <h4>Red Velvet Slice<span class="price">₹89</span></h4>
+            <p>Classic red velvet with cream-cheese frosting.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        <div class="menu-item" data-category="cakes" data-name="Banana Walnut Cake">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=400&q=80" alt="Banana Walnut Cake"></div>
+          <div class="menu-item-body">
+            <h4>Banana Walnut Cake<span class="price">₹79</span></h4>
+            <p>Moist banana cake studded with toasted walnuts.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="menu-category" data-cat="tea">
+        <div class="menu-category-title"><h2>Tea &amp; Bubble Tea</h2></div>
+        <div class="menu-grid">
+        <div class="menu-item" data-category="tea" data-name="Brown Sugar Boba">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=400&q=80" alt="Brown Sugar Boba"></div>
+          <div class="menu-item-body">
+            <h4>Brown Sugar Boba<span class="price">₹129</span></h4>
+            <p>Milk tea with brown-sugar tapioca pearls and a caramel drizzle.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        <div class="menu-item" data-category="tea" data-name="Taro Bubble Tea">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80" alt="Taro Bubble Tea"></div>
+          <div class="menu-item-body">
+            <h4>Taro Bubble Tea<span class="price">₹129</span></h4>
+            <p>Creamy taro-flavoured milk tea with chewy tapioca pearls.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        <div class="menu-item" data-category="tea" data-name="Masala Chai">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=400&q=80" alt="Masala Chai"></div>
+          <div class="menu-item-body">
+            <h4>Masala Chai<span class="price">₹39</span></h4>
+            <p>Classic strong Indian tea brewed with hand-ground spices.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="menu-category" data-cat="snacks">
+        <div class="menu-category-title"><h2>Snacks</h2></div>
+        <div class="menu-grid">
+        <div class="menu-item" data-category="snacks" data-name="Samosa Chaat">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?auto=format&fit=crop&w=400&q=80" alt="Samosa Chaat"></div>
+          <div class="menu-item-body">
+            <h4>Samosa Chaat<span class="price">₹69</span></h4>
+            <p>Crushed samosa topped with curd, chutneys, and sev.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        <div class="menu-item" data-category="snacks" data-name="Masala Fries">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1571506165871-ee72a35bc9d4?auto=format&fit=crop&w=400&q=80" alt="Masala Fries"></div>
+          <div class="menu-item-body">
+            <h4>Masala Fries<span class="price">₹89</span></h4>
+            <p>Crispy fries tossed in our signature chaat masala blend.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        <div class="menu-item" data-category="snacks" data-name="Bhel Puri">
+          <div class="menu-item-photo"><img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=400&q=80" alt="Bhel Puri"></div>
+          <div class="menu-item-body">
+            <h4>Bhel Puri<span class="price">₹55</span></h4>
+            <p>Puffed rice tossed with tangy chutneys, onion, and sev.</p>
+            <button class="btn btn-teal btn-sm add-to-cart">Order Now</button>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="no-results">
+        <h3>No dishes match your search 🥲</h3>
+        <p>Try a different keyword or clear the category filter.</p>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand-mark"><img src="images/Icon.png" alt="Virtue Eat World "></span>
+            <span>Virtue Eat World</span>
+          </a>
+          <p>Coimbatore's favourite chaat &amp; bubble tea stop — pani puri, thattu vadai, cakes and more, made fresh every single day.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/virtue_eat_world?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://wa.me/7708 388 967" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="franchise.html">Franchise</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Popular</h5>
+          <ul>
+            <li><a href="menu.html">Pani Puri</a></li>
+            <li><a href="menu.html">Thattu Vadai</a></li>
+            <li><a href="menu.html">Bubble Tea</a></li>
+            <li><a href="menu.html">Cakes &amp; Brownies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Get in Touch</h5>
+          <ul>
+            <li><a href="tel:+9193609 52670">+91 93609 52670</a></li>
+            <li><a href="mailto:info@virtueeatworld.in">info@virtueeatworld.in</a></li>
+            <li><a href="contact.html">Coimbatore</a></li>
+            <li><a href="contact.html">Open Daily · 11 AM – 11 PM</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Virtue Eat World. All rights reserved.</span>
+        <span>Made with ♥ for street food lovers</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-actions">
+    <a class="fab fab-whatsapp" href="https://wa.me/7708 388 967" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp" style="color: rgb(225, 238, 234);"></i></a>
+    <button class="fab fab-top" id="fabTop" aria-label="Scroll to top">↑</button>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/cart.js"></script>
+  </body>
+  </html>

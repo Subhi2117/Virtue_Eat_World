@@ -1,0 +1,57 @@
+/* =========================================================
+   VIRTUE EAT WORLD — gallery.css
+   Styles specific to gallery.html
+   ========================================================= */
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-auto-rows:180px;
+  gap:16px;
+}
+.gallery-item{
+  border-radius:var(--radius-sm);
+  overflow:hidden;
+  position:relative;
+  cursor:pointer;
+}
+.gallery-item img{ width:100%; height:100%; object-fit:cover; transition:transform .4s ease; }
+.gallery-item:hover img{ transform:scale(1.1); }
+.gallery-item .tag-label{
+  position:absolute; bottom:10px; left:10px;
+  background:rgba(43,30,26,0.72);
+  color:#fff; font-size:.72rem; font-weight:700;
+  padding:5px 12px; border-radius:99px; text-transform:uppercase; letter-spacing:.05em;
+}
+.gallery-item.big{ grid-column:span 2; grid-row:span 2; }
+.gallery-item.hidden{ display:none; }
+
+.lightbox{
+  position:fixed; inset:0; background:rgba(43,30,26,0.92);
+  display:none; align-items:center; justify-content:center;
+  z-index:2000; padding:24px;
+}
+.lightbox.open{ display:flex; }
+.lightbox img{ max-width:min(900px,90vw); max-height:85vh; border-radius:var(--radius-md); box-shadow:var(--shadow-pop); }
+.lightbox-close{
+  position:absolute; top:24px; right:32px;
+  width:46px; height:46px; border-radius:50%;
+  background:rgba(255,255,255,0.12); color:#fff; border:1px solid rgba(255,255,255,0.3);
+  font-size:1.3rem;
+}
+.lightbox-nav{
+  position:absolute; top:50%; transform:translateY(-50%);
+  width:52px; height:52px; border-radius:50%;
+  background:rgba(255,255,255,0.12); color:#fff; border:1px solid rgba(255,255,255,0.3);
+  font-size:1.3rem;
+}
+.lightbox-nav.prev{ left:24px; }
+.lightbox-nav.next{ right:24px; }
+
+/* ---------- Responsive ---------- */
+@media (max-width:1080px){
+  .gallery-grid{ grid-template-columns:repeat(3,1fr); }
+}
+@media (max-width:640px){
+  .gallery-grid{ grid-template-columns:repeat(2,1fr); grid-auto-rows:140px; }
+  .gallery-item.big{ grid-column:span 2; grid-row:span 1; }
+}

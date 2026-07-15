@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Virtue Eat World</title>
+<meta name="description" content="Get in touch with Virtue Eat World — store location, phone, email, business hours and a contact form.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/mobile polish.css">
+<link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><img src="images/Icon.png" alt="Virtue Eat World "></span>
+      <span>Virtue Eat World</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="franchise.html">Franchise</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+     <div class="nav-cta">
+      <a href="cart.html" class="cart-btn" aria-label="Shopping Cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cartCount"></span>
+      </a>
+
+      <a href="menu.html" class="btn btn-primary btn-sm">
+        <span class="long">Order Now</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+      </button>
+
+    </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <div class="breadcrumb">Home <span>/</span> Contact Us</div>
+    <h1>We'd love to hear from you</h1>
+    <p>Questions, feedback, bulk orders, or catering enquiries — reach out and our team will get back within 24 hours.</p>
+  </div>
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,32 C240,90 480,0 720,24 C960,48 1200,90 1440,40 L1440,100 L0,100 Z" fill="#FFF6E7"></path></svg>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+      <div>
+        <span class="eyebrow">Get In Touch</span>
+        <h2 class="section-title">Visit or reach us directly</h2>
+
+        <div class="info-card">
+          <div class="feature-icon">📍</div>
+          <div><h4>Store Location</h4><p>Coimbatore</p></div>
+        </div>
+        <div class="info-card">
+          <div class="feature-icon">📞</div>
+          <div><h4>Phone</h4><p>+91 93609 52670</p></div>
+        </div>
+        <div class="info-card">
+          <div class="feature-icon">✉️</div>
+          <div><h4>Email</h4><p>info@virtueeatworld.in</p></div>
+        </div>
+        <div class="info-card">
+          <div class="feature-icon">🕒</div>
+          <div>
+            <h4>Business Hours</h4>
+            <table class="hours-table">
+              <tr><td>Monday – Friday</td><td>11 AM – 10:30 PM</td></tr>
+              <tr><td>Saturday – Sunday</td><td><break></break>11 AM – 11:30 PM</td></tr>
+              <tr><td>Public Holidays</td><td>12 PM – 11 PM</td></tr>
+            </table>
+          </div>
+        </div>
+<!-- 
+        <div class="social-row">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div> -->
+
+        <div class="map-placeholder">
+          <iframe src="https://maps.google.com/maps?q=10.9282817,76.971674&z=17&output=embed" loading="lazy" title="Virtue Eat World location map" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <div class="form-success">✅ Message sent! We'll get back to you within 24 hours.</div>
+        <form data-validate novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="c-name">Full name</label>
+              <input type="text" id="c-name" data-required="min3" placeholder="Your name">
+              <span class="error-msg"></span>
+            </div>
+            <div class="form-group">
+              <label for="c-phone">Phone number</label>
+              <input type="tel" id="c-phone" data-required="phone" placeholder="Enter Your Number">
+              <span class="error-msg"></span>
+            </div>
+            <div class="form-group full">
+              <label for="c-email">Email address</label>
+              <input type="email" id="c-email" data-required="email" placeholder="Enter Your Email">
+              <span class="error-msg"></span>
+            </div>
+            <div class="form-group full">
+              <label for="c-subject">Subject</label>
+              <select id="c-subject" data-required="min3">
+                <option value="">What's this about?</option>
+                <option>General Enquiry</option>
+                <option>Bulk / Catering Order</option>
+                <option>Feedback</option>
+                <option>Franchise Interest</option>
+              </select>
+              <span class="error-msg"></span>
+            </div>
+            <div class="form-group full">
+              <label for="c-message">Message</label>
+              <textarea id="c-message" data-required="min3" placeholder="How can we help?"></textarea>
+              <span class="error-msg"></span>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark"><img src="images/Icon.png" alt="Virtue Eat World "></span>
+          <span>Virtue Eat World</span>
+        </a>
+        <p>Coimbatore's favourite chaat &amp; bubble tea stop — pani puri, thattu vadai, cakes and more, made fresh every single day.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/virtue_eat_world?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/7708 388 967" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="franchise.html">Franchise</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Popular</h5>
+        <ul>
+          <li><a href="menu.html">Pani Puri</a></li>
+          <li><a href="menu.html">Thattu Vadai</a></li>
+          <li><a href="menu.html">Bubble Tea</a></li>
+          <li><a href="menu.html">Cakes &amp; Brownies</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get in Touch</h5>
+        <ul>
+          <li><a href="tel:+9193609 52670">+91 93609 52670</a></li>
+          <li><a href="mailto:info@virtueeatworld.in">info@virtueeatworld.in</a></li>
+          <li><a href="contact.html">Coimbatore</a></li>
+          <li><a href="contact.html">Open Daily · 11 AM – 11 PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Virtue Eat World. All rights reserved.</span>
+      <span>Made with ♥ for street food lovers</span>
+    </div>
+  </div>
+</footer>
+
+<div class="floating-actions">
+  <a class="fab fab-whatsapp" href="https://wa.me/7708 388 967" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp" style="color: rgb(225, 238, 234);"></i></a>
+  <button class="fab fab-top" id="fabTop" aria-label="Scroll to top">↑</button>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

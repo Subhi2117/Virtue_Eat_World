@@ -1,0 +1,268 @@
+/* ==========================================
+   CART PAGE - Virtue Eat World
+========================================== */
+
+.cart-section{
+    padding:80px 0;
+    background:var(--cream);
+    min-height:100vh;
+}
+
+.cart-title{
+    font-size:2.5rem;
+    color:var(--maroon-dk);
+    margin-bottom:35px;
+}
+
+.cart-layout{
+    display:grid;
+    grid-template-columns:2fr 380px;
+    gap:32px;
+    align-items:start;
+}
+
+/* LEFT */
+
+.cart-items{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:var(--radius-lg);
+    box-shadow:var(--shadow-card);
+    overflow:hidden;
+}
+
+.cart-head{
+    display:grid;
+    grid-template-columns:3fr 1fr 1fr 1fr;
+    padding:20px 28px;
+    background:rgba(122,27,46,.05);
+    font-weight:700;
+    color:var(--maroon-dk);
+}
+
+.cart-item{
+    display:grid;
+    grid-template-columns:3fr 1fr 1fr 1fr;
+    gap:20px;
+    align-items:center;
+    padding:24px 28px;
+    border-top:1px solid var(--line);
+}
+
+.product{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.product img{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:14px;
+    border:1px solid var(--line);
+    background:#fff;
+}
+
+.product h4{
+    margin:0 0 6px;
+    color:var(--maroon-dk);
+    font-size:1.1rem;
+}
+
+.product p{
+    margin:0;
+    color:var(--ink-soft);
+    font-size:.9rem;
+}
+
+.cart-item>div:nth-child(2),
+.cart-item>div:nth-child(4){
+    font-weight:700;
+    color:var(--ink);
+}
+
+/* Quantity */
+
+.qty{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
+
+.qty button{
+    width:34px;
+    height:34px;
+    border:none;
+    border-radius:50%;
+    background:var(--chili);
+    color:#fff;
+    font-size:18px;
+    transition:.25s;
+}
+
+.qty button:hover{
+    background:var(--chili-dk);
+    transform:translateY(-2px);
+}
+
+.qty span{
+    min-width:24px;
+    text-align:center;
+    font-weight:700;
+}
+
+/* Remove */
+
+.remove{
+    border:none;
+    background:none;
+    color:var(--chili);
+    margin-left:12px;
+    font-size:18px;
+}
+
+.remove:hover{
+    color:var(--chili-dk);
+}
+
+/* RIGHT */
+
+.cart-summary{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:var(--radius-lg);
+    padding:30px;
+    box-shadow:var(--shadow-card);
+    position:sticky;
+    top:110px;
+}
+
+.cart-summary h2{
+    margin-bottom:28px;
+    color:var(--maroon-dk);
+}
+
+.summary-row{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:18px;
+    color:var(--ink);
+}
+
+.cart-summary hr{
+    border:none;
+    border-top:1px solid var(--line);
+    margin:24px 0;
+}
+
+.summary-row.total{
+    font-size:1.45rem;
+    font-weight:700;
+    color:var(--chili);
+}
+
+.checkout-btn{
+    width:100%;
+    margin-top:28px;
+}
+
+/* Empty Cart */
+
+.empty-cart{
+    padding:70px 20px;
+    text-align:center;
+}
+
+.empty-cart h2{
+    margin-bottom:12px;
+}
+
+.empty-cart p{
+    margin-bottom:25px;
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+
+.cart-layout{
+    grid-template-columns:1fr;
+}
+
+.cart-summary{
+    position:static;
+}
+
+}
+
+@media(max-width:768px){
+
+.cart-head{
+    display:none;
+}
+
+.cart-item{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.product{
+    width:100%;
+}
+
+.qty{
+    justify-content:flex-start;
+}
+
+.cart-item>div:nth-child(2),
+.cart-item>div:nth-child(4){
+    margin-top:10px;
+}
+
+.cart-title{
+    font-size:2rem;
+}
+
+}
+
+/* ==========================
+   Checkout Button Fix
+========================== */
+
+.checkout-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:100%;
+    height:58px;
+
+    background:var(--chili);
+    color:#fff;
+
+    border:none;
+    border-radius:999px;
+
+    font-size:1rem;
+    font-weight:700;
+    text-align:center;
+
+    box-shadow:0 12px 24px -10px rgba(232,80,31,.45);
+
+    transition:all .3s ease;
+}
+
+.checkout-btn:hover{
+    background:var(--chili-dk);
+    transform:translateY(-2px);
+    box-shadow:0 13px 30px -10px rgba(232,80,31,.55);
+}
+
+.checkout-btn span{
+    display:block;
+    width:50%;
+    text-align:center;
+}
